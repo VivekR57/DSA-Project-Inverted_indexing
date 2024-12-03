@@ -1,0 +1,71 @@
+NAME : VIVEK
+DATE : 03/12/24
+DESCRIPTION : An inverted indexing system commonly used in information retrival system such as search engines.and it maps words to their occurance
+across multiple file allowing efficient searching and retrieval of information
+
+SAMPLE INPUT: ./a.out file_1.txt file_2.txt file_3.txt 
+
+SAMPLE OUTPUT:
+
+ 1.Create Data Base
+***** Operation Successful *****
+  Data Base created successfully.
+**********************************
+
+2.Display Data Base 
+Enter your choice: 2
+
+***** Displaying Database *****
+
++---------------------------------------------------------------------------------------------------------+
+| Index | Word            | File Count | File Names (Count)                                 |
++---------------------------------------------------------------------------------------------------------+
+| 0     | apple           | 3          | file_3.txt (1), file_2.txt (1), file_1.txt (2) |
+| 0     | amma            | 2          | file_3.txt (1), file_2.txt (1) |
+| 0     | appa            | 2          | file_3.txt (1), file_2.txt (1) |
+| 1     | bangalore       | 3          | file_3.txt (1), file_2.txt (1), file_1.txt (1) |
+| 2     | chennai         | 3          | file_3.txt (1), file_2.txt (1), file_1.txt (1) |
+| 3     | dad             | 2          | file_3.txt (1), file_2.txt (1) |
+| 7     | hello           | 3          | file_3.txt (1), file_2.txt (1), file_1.txt (1) |
+| 12    | mumbai          | 3          | file_3.txt (1), file_2.txt (1), file_1.txt (1) |
+| 14    | orange          | 3          | file_3.txt (1), file_2.txt (1), file_1.txt (1) |
+| 19    | thiruvannamalai | 2          | file_3.txt (1), file_2.txt (1) |
+| 22    | welcome         | 3          | file_3.txt (1), file_2.txt (1), file_1.txt (1) |
+| 26    | *hello          | 1          | file_2.txt (1) |
++---------------------------------------------------------------------------------------------------------+
+**********************************
+
+3. Search Data Base 
+***** Search Successful *****
+  Word found in the Data Base.
+  ===========================
+  Index: [14]
+  Word: orange
+  File Count: 3
+  ===========================
+
+  File Details:
+  -------------
+  File: file_3.txt, Count: 1
+  File: file_2.txt, Count: 1
+  File: file_1.txt, Count: 1
+  -------------
+*******************************
+
+***** Operation Successful *****
+  Search successful: Word found in the Data Base.
+**********************************
+
+4.Save Data Base 
+Enter file name (with .txt extension): backup.txt
+
+***** Operation Successful *****
+  Data Base saved successfully.
+**********************************
+
+5.Update Data Base 
+Please enter the database file name (with .txt extension): backup.txt
+
+***** Operation Successful *****
+  Data Base update successfully.
+**********************************
